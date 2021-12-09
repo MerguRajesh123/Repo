@@ -86,11 +86,12 @@ public class MainTrans extends TransactionService {
 		ts.sortByCity();
 		System.out.println("\nAfter Sort Transactions by City :");
 		ts.ShowTransactions();
-		//Generic
-		//System.out.println("\nAfter Sort Transactions by City :");
-		//Comparator<Transaction> cm = Comparator.comparing(Transaction::getCity,Comparator.nullsLast(String::compareTo));
-		//Collections.sort(ts,(l1,l2)->{return l1.name.compareTo.l2});
-		
+		// Generic
+		// System.out.println("\nAfter Sort Transactions by City :");
+		// Comparator<Transaction> cm =
+		// Comparator.comparing(Transaction::getCity,Comparator.nullsLast(String::compareTo));
+		// Collections.sort(ts,(l1,l2)->{return l1.name.compareTo.l2});
+
 	}
 
 }

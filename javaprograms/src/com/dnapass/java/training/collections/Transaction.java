@@ -1,50 +1,22 @@
 package com.dnapass.java.training.collections;
+
 import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Objects;
 
-//import javax.xml.bind.annotation.xmlRootElement;
-//import javax.xml.*;
-
-	
-class CityComparator  implements Comparator<Transaction>{
-	
-	@Override
-	public int compare(Transaction t1, Transaction t2) {
-		// TODO Auto-generated method stub
-
-		return t1.city.compareTo(t2.city);
-	}
-}
-class AmountComparator  implements Comparator<Transaction>{
-		
-		@Override
-		public int compare(Transaction t1, Transaction t2) {
-			// TODO Auto-generated method stub
-
-			if(t1.amount==t2.amount)  
-				return 0;  
-				else if(t1.amount>t2.amount)  
-				return 1;  
-				else  
-				return -1;  
-				}
-		}
-		
-public class Transaction  implements Serializable,Cloneable,Comparable<Transaction>{
+public class Transaction implements Serializable, Cloneable, Comparable<Transaction> {
 	protected Integer id;
 	protected ProductType type;
 	protected Double amount;
 	protected String city;
 	protected String currency;
-	
-	
+
 	public Transaction() {
 		super();
 	}
-	
+
 	public Transaction(Integer id, ProductType type, Double amount, String city, String currency) {
-		//super();
+		// super();
 		this.id = id;
 		this.type = type;
 		this.amount = amount;
@@ -92,11 +64,6 @@ public class Transaction  implements Serializable,Cloneable,Comparable<Transacti
 		this.currency = currency;
 	}
 
-
-	
-	
-
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(amount, city, currency, id, type);
@@ -118,12 +85,36 @@ public class Transaction  implements Serializable,Cloneable,Comparable<Transacti
 	@Override
 	public int compareTo(Transaction o) {
 		// TODO Auto-generated method stub
-		if(id==o.id)  
-			return 0;  
-			else if(id>o.id)  
-			return 1;  
-			else  
-			return -1;  
-			} 
-		
+		if (id == o.id)
+			return 0;
+		else if (id > o.id)
+			return 1;
+		else
+			return -1;
 	}
+
+}
+class CityComparator implements Comparator<Transaction> {
+
+	@Override
+	public int compare(Transaction t1, Transaction t2) {
+		// TODO Auto-generated method stub
+
+		return t1.city.compareTo(t2.city);
+	}
+}
+
+class AmountComparator implements Comparator<Transaction> {
+
+	@Override
+	public int compare(Transaction t1, Transaction t2) {
+		// TODO Auto-generated method stub
+
+		if (t1.amount == t2.amount)
+			return 0;
+		else if (t1.amount > t2.amount)
+			return 1;
+		else
+			return -1;
+	}
+}

@@ -2,6 +2,7 @@ package com.dnapass.java.training.collections;
 
 import java.util.*;
 
+
 public class TransactionService {
 	static List<Transaction> TransactionsDatabase = new ArrayList<Transaction>();
 	static {
@@ -94,13 +95,11 @@ public class TransactionService {
 		return false;
 	}
 
-
 	public boolean binarySearch(Transaction tran) {
 		Collections.sort(TransactionsDatabase);
 		System.out.println(Collections.binarySearch(TransactionsDatabase, tran));
 		return true;
 	}
-	
 
 	public boolean sortByAmount() {
 		Collections.sort(TransactionsDatabase, new AmountComparator());

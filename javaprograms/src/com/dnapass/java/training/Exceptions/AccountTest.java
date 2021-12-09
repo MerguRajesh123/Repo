@@ -1,6 +1,6 @@
 package com.dnapass.java.training.Exceptions;
 
-import com.dnapass.java.trainig.inheritance41.SavingsAccount;
+import com.dnapass.java.trainig.inheritance.account.SavingsAccount;
 
 public class AccountTest {
 
