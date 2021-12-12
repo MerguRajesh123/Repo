@@ -1,6 +1,6 @@
 package com.dnapass.java.training.files1;
 
-import com.dnapass.java.training.inheritance41.Account;
+import com.dnapass.java.trainig.inheritance.account.Account;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

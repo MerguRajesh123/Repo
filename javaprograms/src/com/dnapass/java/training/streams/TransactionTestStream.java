@@ -3,7 +3,7 @@ package com.dnapass.java.training.streams;
 import com.dnapass.java.training.collections.ProductType;
 import com.dnapass.java.training.collections.Transaction;
 
-public class MainTransStream {
+public class TransactionTestStream {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

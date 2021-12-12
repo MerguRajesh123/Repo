@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.EnumSet;
 
-public class MainTrans extends TransactionService {
+public class TransactionTest extends TransactionService {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -22,7 +22,7 @@ import java.time.temporal.TemporalAdjusters;
 // method determines whether it is daylight saving time when the flight arrives 
 //in Tokyo.
 
-public class FlightProgram {
+public class FlightDemo {
 	
 	
 	public static void main(String[] args) {
